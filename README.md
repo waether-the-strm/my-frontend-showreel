@@ -2,12 +2,12 @@
 Hello, I'm Jan and I made some work to present my frontend dev skills.
 
 Inside you'll find the following tasks:
-- Task 1 – :newspaper: Layout
-- Task 2 – :busts_in_silhouette: Duplicate array 
+- Task 1 – :newspaper::newspaper::newspaper: Layout
+- Task 2 – :busts_in_silhouette::busts_in_silhouette::busts_in_silhouette: Duplicate array 
 - Task 3 – :one::three::five: Remove even numbers from array
-- Task 4 – :globe_with_meridians: Get data from endpoints
+- Task 4 – :globe_with_meridians::globe_with_meridians::globe_with_meridians: Get data from endpoints
 - Task 5 – :a::vs::b: Change file name with node.js
-- Task 6 – :black_square_button: Animate square with Vanilla JS (in progress…) :construction_worker:
+- Task 6 – :black_square_button::white_square_button::black_square_button: Animate square with Vanilla JS (in progress…) :construction_worker:
 
 Below you'll find instructions how to run this simple project.
 
