@@ -1,3 +1,12 @@
+/**
+ *                  DANGER
+ *          !!! CONSTRUCTION SITE !!!
+ *       This task is under construction
+ *       please, come back later (maybe…)
+ *
+ *                    :)
+ */
+
 const init = () => {
   window.requestAnimationFrame(draw);
 }
@@ -35,9 +44,6 @@ const draw = () => {
 
   ctx.clearRect(0, 0, width, height);
 
-  // ctx.font = '20px serif';
-  // ctx.fillText(JSON.stringify(canvas.getBoundingClientRect()), 50,50)
-
   const moveLeft = () => isMovingRight = false;
 
   isMovingRight ? updateXPos(move(squareXPos, 2, 1)) : updateXPos(move(squareXPos, -2, -1));
@@ -55,8 +61,3 @@ const draw = () => {
 }
 
 init();
-
-// 1.	Napisz w Vanilla JS kod, który będzie wyświetlał w przeglądarce kwadrat o wymiarach 50px x 50px.
-// - kwadrat ma poruszać się od lewej do prawej krawędzi przeglądarki z dowolną prędkością,
-// - gdy kwadrat jest przy prawej krawędzi przeglądarki ma mieć wymiary 100px na 100px przy lewej ma zachować początkowe wymiary (50px x 50px)
-// - kwadrat ma zmieniać swój kolor co 20px na losowy
