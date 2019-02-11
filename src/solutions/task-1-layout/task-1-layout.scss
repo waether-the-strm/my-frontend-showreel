@@ -1,0 +1,75 @@
+@import '../../styles/utils';
+
+$particle: 10px;
+$pad: 16px;
+
+body, h1 {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.gray-box {
+  background: rgba(0,0,0,.4);
+  color: #555;
+  box-sizing: border-box;
+  padding: $pad;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+/***
+  Grid layout
+***/
+.grid {
+  display: grid;
+  grid-gap: $pad;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: $pad auto;
+  box-sizing: border-box;
+
+  &_grid {
+    grid-template-rows: 6fr 6fr 3fr;
+  }
+}
+
+.header {
+  &_grid {
+    grid-template-rows: 2fr 3fr 1fr;
+  }
+}
+
+.navbar {
+  margin: 0 #{$pad * -0.5};
+  padding: 0;
+  display: flex;
+  list-style: none;
+  height: 100%;
+
+  &__item {
+    flex: 1;
+    padding: 0 #{$pad / 2};
+    box-sizing: border-box;
+  }
+}
+
+.main {
+  grid-area: main;
+}
+
+.content {
+  &_grid {
+    grid-template-columns: 5fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "main ."
+      "main ."
+  }
+}

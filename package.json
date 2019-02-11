@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "cssnano": "^4.1.8",
+    "sass": "^1.17.0"
+  },
+  "name": "jm-rec-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "normalize": "^0.3.1"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "prod": "parcel build index.html -d build/output",
+    "file": "node node-task.js",
+    "file:rename": "yarn run file --rename",
+    "file:create": "yarn run file --create",
+    "postinstall": "yarn run start"
+  }
+}
