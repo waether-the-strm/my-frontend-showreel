@@ -2,7 +2,7 @@ import { $resultsArea } from '../../shared';
 import { arrayDuplicate } from './array-duplicate';
 
 export const task2duplicate = () => {
-  window.testDuplicate = () => {
+  const testDuplicate = () => {
     try {
       const result = [1, 2, 3, 4].duplicate()
       document.getElementById('taskResults').innerText = result;
@@ -13,11 +13,11 @@ export const task2duplicate = () => {
     }
 
   }
-  window.handleDuplicateEnabled = () => {
+  const handleDuplicateEnabled = () => {
     arrayDuplicate.enable()
     console.info('Array.prototype.duplicate enabled')
   }
-  window.handleDuplicateDisabled = () => {
+  const handleDuplicateDisabled = () => {
     arrayDuplicate.disable()
     console.info('Array.prototype.duplicate disabled')
   }
@@ -26,9 +26,9 @@ export const task2duplicate = () => {
   $resultsArea.innerHTML = `
     <div class="row">
       <div class="col">
-        <button type="button" class="btn btn-outline-success btn-sm" onclick="handleDuplicateEnabled()">enable Array.prototype.duplicate</button>
-        <button type="button" class="btn btn-outline-danger btn-sm" onclick="handleDuplicateDisabled()">disable Array.prototype.duplicate</button>
-        <button type="button" class="btn btn-outline-primary btn-sm" onclick="testDuplicate()">run: <code>[1,2,3,4].duplicate()</code></button>
+        <button type="button" class="btn btn-outline-success btn-sm" data-run="handleDuplicateEnabled">enable Array.prototype.duplicate</button>
+        <button type="button" class="btn btn-outline-danger btn-sm" data-run="handleDuplicateDisabled">disable Array.prototype.duplicate</button>
+        <button type="button" class="btn btn-outline-primary btn-sm" data-run="testDuplicate">run: <code>[1,2,3,4].duplicate()</code></button>
       </div>
     </div>
     <div class="row mt-1">
@@ -37,4 +37,8 @@ export const task2duplicate = () => {
       </div>
     </div>
   `;
+
+  document.querySelector('[data-run="handleDuplicateEnabled"]').addEventListener('click', handleDuplicateEnabled)
+  document.querySelector('[data-run="handleDuplicateDisabled"]').addEventListener('click', handleDuplicateDisabled)
+  document.querySelector('[data-run="testDuplicate"]').addEventListener('click', testDuplicate)
 }
