@@ -1,3 +1,10 @@
+## ⚠️ Archived & Outdated
+
+This project is an old frontend showreel and does not represent my current skills or recent work.  
+I am keeping it here for reference and historical purposes only.
+
+If you want to see my latest projects and up-to-date code, please check out my newer repositories on my [GitHub profile](https://github.com/waether-the-strm).
+
 # Dentsu recruitment tasks
 Hello, I'm Jan and I made some work to present my frontend dev skills.
 
